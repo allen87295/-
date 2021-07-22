@@ -1,0 +1,291 @@
+body{
+    margin: 0; padding: 0; 
+   }
+.menu{
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(255,255,255,0.5);
+    box-shadow : 3px 0px 10px hsla(240,40%,15%,.6);
+    position: relative;
+}
+
+
+.saleList>li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 800;   
+    text-shadow: black 0.01em 0.05em 0.1em;
+    padding: 30px 20px;
+    
+     
+}
+.saleListInner>li{
+    list-style-type: none;
+    padding: 10px 20px;
+    background-color: white;
+    border: seashell 0.5px solid; 
+
+}
+
+.saleList>li:hover > a {
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    right: 1px;
+    
+}
+li>ul{
+    margin:0; padding:0;
+} 
+
+
+.featuresPic input, 
+.featuresPic button{
+    border:1px solid black ;
+}
+.featuresPic input:focus, 
+.featuresPic button:focus{
+    outline: none;
+}
+
+
+.featuresPic button{
+    border-radius: 0 200px 200px 0;
+}
+.featuresPic input{
+    border-radius: 200px 0 0 200px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "微軟正黑體";
+    color:black;
+    letter-spacing: 2px;
+    display: block;
+
+}
+
+nav{
+    display: flex;
+    flex-grow: 6;
+}
+.saleList{
+    display: flex;
+    width: 100%;
+    height: 50px;   
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.saleList ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    background-color:rgb(255,255,255,0.2);
+    border: gray solid 1px;
+    box-shadow: 5px 0px 10px hsla(100,0%,3%,.3);
+    
+}
+
+.saleList :hover ul{
+    display: block;
+    
+}
+
+.featuresPic{
+    display: flex;
+    flex-grow: 4;
+    margin: auto;
+    
+}
+.headPic{
+    width: 25px;
+    height: 25px;   
+}
+.headSearch{
+    width: 20px;
+    height: 20px;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 700px;
+    border: 1px grey solid;
+    margin:  80px auto 200px auto;
+}
+
+.changeBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+}
+
+#registeredMem{
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    line-height: 60px;
+    border-right: solid grey 1px;
+    border-bottom: solid grey 1px;
+    font-size: 18px;
+    background-color: rgb(228, 228, 228);
+
+}
+
+#loginMem{
+    display: inline-block;
+    text-align:center;
+    line-height:60px ;
+    width: 50%;
+    font-size: 18px;
+}
+
+
+
+#registeredMemR{
+    text-align: center;
+    width: 50%;
+    line-height: 60px;
+    border-right: solid grey 1px;
+    font-size: 18px;
+}
+
+#loginMemR{
+    cursor: pointer;
+    display: inline-block;
+    text-align:center;
+    line-height:60px ;
+    border-bottom: solid grey 1px;
+    width: 50%;
+    font-size: 18px;
+    background-color: rgb(228, 228, 228);
+}
+
+.registeredContainer{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 700px;
+    border: 1px grey solid;
+    margin:  80px auto 200px auto;
+    display: none;
+}
+
+.enterAcPw{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.registered{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.registeredDiv{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.registered span{
+    font-size: 8px;
+    color: grey;
+    margin: 0 340px 0 0;
+}
+.registered b{
+    font-size: 14px;
+    margin: 0 280px 0 0;
+
+}
+
+.subscriptionDiv{
+    margin: 3px 280px 0 0;
+
+}
+.iAgreeDiv{
+    margin: 3px 165px 0 0;
+   
+}
+
+.iAgreeDiv a{
+text-decoration: none;
+}
+
+.acountText{
+    padding: 10px;
+    font-size: 17px;
+}
+
+.textArea{
+    width: 400px;
+    height: 30px;
+    margin: 8px auto 8px auto;
+}
+
+
+.loginAc{
+    border: grey solid 1px;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 8px auto 0 auto ;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.loginAc:hover{
+    background-color: rgb(65, 97, 156) ;
+    
+}
+
+.forGetPw{
+    text-align: right;
+    margin: 8px 146px 0  0;
+}
+
+.forGotPw{
+    text-align: right;
+    margin: 8px 40px 0  0;
+}
+
+
+.forGetPw a{
+    text-decoration: none;
+}
+.forGotPw a{
+    text-decoration: none;
+}
+
+.mainFooter{
+    background-image: url(../picture/bottomBackground.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.footerContainer{
+    display: flex; 
+    justify-content: space-around;
+   
+    
+}
+.footerItem{
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+}
+.contractPic{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px ;
+   
+}

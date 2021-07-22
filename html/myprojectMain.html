@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyClothes</title>
+    <script src="../js/jquery-3.4.1.js" ></script>
+    <script src="../js/myProjectProduct.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" href="../picture/icon.png">
+    <link rel="stylesheet" href="../css/myprojectMain.css">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="cartSwitch">
+    
+    <div class="cartcontainer" ></div>
+    <div class="sideCart">
+        <div>
+            <span>購物車</span>
+            <div class="productInCart">
+
+            </div>
+            <div>
+                <button>訂單結帳</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="cartDiv">
+        <label for="cartSwitch">
+            <img id="myCartPull" src="../picture/cart2.jpg" alt="">
+        </label>
+    </div>
+
+
+    <header class="menu">
+        <nav>
+            <ul class="saleList">
+                <a href="./myprojectMain.html"><img id="logo" src="../picture/logo.png" alt="這是logo"></a>
+                <li> <a href="#">新品上市</a></li>
+                <li> <a href="#">特價中</a></li>
+                <li> <a href="#">上身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">短袖上衣</a></li>
+                        <li><a href="">上袖上衣</a></li>
+                        <li><a href="./allProducts.html">襯衫</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">下身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">長褲</a></li>
+                        <li><a href="">短褲</a></li>
+                        <li><a href="">工作褲</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">配件</a>
+                    <ul class="saleListInner">
+                        <li><a href="">帽子</a></li>
+                        <li><a href="">眼鏡</a></li>
+                        <li><a href="">飾品</a></li>
+                    </ul>
+                </li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">鞋</a></li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">關於我們</a></li>
+            </ul>
+        </nav>
+        <div class="featuresPic">
+            <input type="search" placeholder="請輸入關鍵字">
+            <button><img class="headSearch" src="../picture/search.png" alt=""></button>
+            <a href="./login.html"><img class="headPic" src="../picture/member.png" alt=""></a>
+            <a href="./login.html"><img class="headPic" src="../picture/noun_cart_1246425.png" alt=""></a>
+        </div>
+
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../picture/mainPic2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../picture/mainPic3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../picture/mainPicTshirt.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <hr>
+    <div class="secondAdv">
+        <img src="../picture/mainPicW.jpg" alt="">
+    </div>
+
+    <h2>NEW ARRIVAL !!</h2><hr>
+
+    <div class="productsForSale">
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product020.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">紮染開襟領滑面抗皺短袖襯衫</div>
+            <div class="thisProductPrice">NT$490</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product021.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">3 COLOR夏季疊穿混紗薄針織背心</div>
+            <div class="thisProductPrice">NT$630</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product022.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">3 COLOR 抓皺慵懶透膚小袋短袖襯衫</div>
+            <div class="thisProductPrice">NT$499</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product023.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">4 COLOR基本必備挺款五分牛仔短褲</div>
+            <div class="thisProductPrice">NT$499</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product024.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">4 COLOR 石洗地球FLORIDA數位圖短TEE
+            </div>
+            <div class="thisProductPrice">NT$590</div>
+        </div>
+        <div class="products">
+            <div>
+                <div  class="hoverProduct">
+                    <img class="productAll" src="../picture/product025.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">3COLOR修飾腿型百搭直筒9分牛仔褲</div>
+            <div class="thisProductPrice">NT$590</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product026.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">2 COLOR 雙層水洗漸變牛仔褲</div>
+            <div class="thisProductPrice">NT$499</div>
+        </div>
+        <div class="products hAnchor">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product027.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">皮革單肩雙層電腦包
+            </div>
+            <div class="thisProductPrice">NT$890</div>
+        </div>
+    </div>
+        <h2>HOT SALES !!</h2><hr>
+
+    <div class="productsForSale">
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product028.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">11色棉麻混紡多色短袖古巴領襯衫
+            </div>
+            <div class="thisProductPrice">NT$590</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product029.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">BON 四色小熊軟糖純棉短TEE
+            </div>
+            <div class="thisProductPrice">NT$590</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product030.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">質感灰單膝方破石洗牛仔褲
+            </div>
+            <div class="thisProductPrice">NT$690</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product031.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">霧面灰藍色側邊刀割直筒牛仔褲
+            </div>
+            <div class="thisProductPrice">NT690</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product032.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">刷色雙布拼接直筒牛仔褲
+            </div>
+            <div class="thisProductPrice">NT690</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product033.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">原色淺水藍開衩五分褲
+            </div>
+            <div class="thisProductPrice">NT390</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product034.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">皮革單肩背包寬底中線斜挎手提包
+            </div>
+            <div class="thisProductPrice">NT690</div>
+        </div>
+        <div class="products">
+            <div>
+                <div class="hoverProduct">
+                    <img class="productAll" src="../picture/product035.jpg" alt="">
+                </div>
+                <div class="hoverFeatures">
+                    <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                    <span>加入購物車</span>
+                    <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                    <span>查看商品</span>
+                </div>
+            </div>
+            <div class="thisProductName">厚底皮革寬條樂福鞋
+            </div>
+            <div class="thisProductPrice">NT2980</div>
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <img id="goToTop" src="../picture/toTheTop.png" alt="">
+    </div>
+    
+        
+
+    <div class="mainFooter">
+        <div>
+            <img class="contractPic" src="../picture/igMark.png" alt="">
+            <img class="contractPic" src="../picture/fbMark.png" alt="">
+            <img class="contractPic" src="../picture/LineMark.jpg" alt="">
+        </div>
+
+        <div class="footerContainer">
+            <div class="footerItem">
+                <h3>新品上市</h3>
+            </div>
+            <div class="footerItem">
+                <h3>特價中</h3>
+            </div>
+            <div class="footerItem">
+                <h3>所有商品</h3>
+            </div>
+            <div class="footerItem">
+                <h3>關於我們</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>

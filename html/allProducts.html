@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>襯衫</title>
+    <script src="../js/jquery-3.4.1.js" ></script>
+    <script src="../js/myProjectProduct.js" defer> </script>
+    <link rel="stylesheet" href="../css/allProducts.css">
+    <link rel="icon" href="../picture/icon.png">
+</head>
+
+
+<body>
+    <input type="checkbox" id="cartSwitch">
+    
+    <div class="cartcontainer" ></div>
+    <div class="sideCart">
+        <div>
+            <span>購物車</span>
+            <div class="productInCart">
+
+            </div>
+            <div>
+                <button>訂單結帳</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="cartDiv">
+        <label for="cartSwitch">
+            <img id="myCartPull" src="../picture/cart2.jpg" alt="">
+        </label>
+    </div>
+
+
+    <header class="menu">
+        <nav>
+            <ul class="saleList">
+                <a href="./myprojectMain.html"><img id="logo" src="../picture/logo.png" alt="這是logo"></a>
+                <li> <a href="#">新品上市</a></li>
+                <li> <a href="#">特價中</a></li>
+                <li> <a href="#">上身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">短袖上衣</a></li>
+                        <li><a href="">上袖上衣</a></li>
+                        <li><a href="">襯衫</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">下身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">長褲</a></li>
+                        <li><a href="">短褲</a></li>
+                        <li><a href="">工作褲</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">配件</a>
+                    <ul class="saleListInner">
+                        <li><a href="">帽子</a></li>
+                        <li><a href="">眼鏡</a></li>
+                        <li><a href="">飾品</a></li>
+                    </ul>
+                </li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">鞋</a></li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">關於我們</a></li>
+            </ul>
+        </nav>
+        <div class="featuresPic">
+            <input type="search" placeholder="請輸入關鍵字">
+            <button><img class="headSearch" src="../picture/search.png" alt=""></button>
+            <a href="./login.html"><img class="headPic" src="../picture/member.png" alt=""></a>
+            <a href="./login.html"><img class="headPic" src="../picture/noun_cart_1246425.png" alt=""></a>
+        </div>
+    </header>
+
+    <div class="addressBar">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">首頁</a>
+        <img class="right" src="../picture/right.png" alt="">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">衣服</a>
+        <img class="right" src="../picture/right.png" alt="">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">襯衫</a>
+    </div>
+
+    <div>
+        <img id="goToTop" src="../picture/toTheTop.png" alt="">
+    </div>
+    <hr><br>
+
+    <div class="productsLeftContainer">
+        <div class="sideMenu">
+            <ul>
+                <li><span>NEW!!</span> 新品上市!!</li>
+                <li>特價中</li>
+                <li id="topWearLi">上身<div><img id="downImg1" src="../picture/down.jpg" alt=""> </div>
+                </li>
+                <ul class="topWear">
+                    <li><a href="">短袖上衣</a></li>
+                    <li><a href="">長袖上衣</a></li>
+                    <li><a href="">襯衫</a></li>
+                </ul>
+                <li id="bottomWearLI">下身<div><img id="downImg2" src="../picture/down.jpg" alt=""> </div>
+                </li>
+                <ul class="bottomWear">
+                    <li><a href="">長褲</a></li>
+                    <li><a href="">短褲</a></li>
+                    <li><a href="">工作褲</a></li>
+                </ul>
+                <li id="eyeWearLI">配件<div><img id="downImg3" src="../picture/down.jpg" alt=""> </div>
+                </li>
+                <ul class="eyeWear">
+                    <li><a href="">帽子</a></li>
+                    <li><a href="">眼鏡</a></li>
+                    <li><a href="">飾品</a></li>
+                </ul>
+                <li>鞋</li>
+            </ul>
+
+        </div>
+
+        <div class="productsRightContainer">
+            <div class="sortTitle">
+                <div class="productsSort">
+                    襯衫
+                </div>
+                <div>
+                    <select name="" id="sortSelect">
+                        <optgroup label="商品排序">
+                            <option value="" class="displayObject">商品排序</option>
+                            <option value="">上架時間： 由新到舊</option>
+                            <option value="">上架時間： 由舊到新</option>
+                            <option value="">價格： 由低至高</option>
+                            <option value="">價格： 由高至低</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <div class="productsForSale">
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product001.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝經典牛津襯衫(長袖)</div>
+                    <div class="thisProductPrice">NT$590</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product002.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝經典府綢襯衫(長袖)</div>
+                    <div class="thisProductPrice">NT$390</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product003.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝吸濕速乾寬版條紋開領襯衫</div>
+                    <div class="thisProductPrice">NT$890</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product004.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝吸濕速乾寬版格紋開領襯衫</div>
+                    <div class="thisProductPrice">NT$890</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product005.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">吸濕速乾寬版素色開領襯衫</div>
+                    <div class="thisProductPrice">NT$890</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div  class="hoverProduct">
+                            <img class="productAll" src="../picture/product006.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝圓弧下擺剪裁府綢寬版襯衫</div>
+                    <div class="thisProductPrice">NT$590</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product007.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝字母素色襯衫</div>
+                    <div class="thisProductPrice">NT$690</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product008.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝素色主廚襯衫</div>
+                    <div class="thisProductPrice">NT$790</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product009.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝牛仔主廚襯衫</div>
+                    <div class="thisProductPrice">NT$890</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product010.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝圓弧下擺剪裁府綢寬版襯衫</div>
+                    <div class="thisProductPrice">NT$590</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product011.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝軍裝寬鬆襯衫</div>
+                    <div class="thisProductPrice">NT$790</div>
+                </div>
+                <div class="products">
+                    <div>
+                        <div class="hoverProduct">
+                            <img class="productAll" src="../picture/product012.jpg" alt="">
+                        </div>
+                        <div class="hoverFeatures">
+                            <img class="putInCart" src="../picture/cartcircle.png" alt="">
+                            <span>加入購物車</span>
+                            <a href="./myProjectProduct.html"><img src="../picture/search.png" alt=""></a>
+                            <span>查看商品</span>
+                        </div>
+                    </div>
+                    <div class="thisProductName">男裝立領寬鬆襯衫</div>
+                    <div class="thisProductPrice">NT%790</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="mainFooter">
+        <div class="footerPicContainer">
+            <img class="contractPic" src="../picture/igMark.png" alt="">
+            <img class="contractPic" src="../picture/fbMark.png" alt="">
+            <img class="contractPic" src="../picture/LineMark.jpg" alt="">
+        </div>
+        <div class="footerNavContainer">
+            <div class="footerItem">
+                <h3>新品上市</h3>
+            </div>
+            <div class="footerItem">
+                <h3>特價中</h3>
+            </div>
+            <div class="footerItem">
+                <h3>所有商品</h3>
+            </div>
+            <div class="footerItem">
+                <h3>關於我們</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁</title>
+    <link rel="stylesheet" href="../css/myProjectProduct.css">
+    <link rel="icon" href="../picture/icon.png">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/myProjectProduct.js" defer> </script>
+
+
+</head>
+
+<body>
+    <input type="checkbox" id="cartSwitch">
+
+    <div class="sideCart">
+        <div>
+            <span>購物車</span>
+            <div class="productInCart">
+                <div class="Cartproduct">
+                    <div>
+                        <img src="../picture/jacket1_1.jpeg" alt="">
+                    </div>
+                    <div>
+                        <div class="productName">韓國春夏素面短T</div>
+                        <div class="productSize">米色L</div>
+                        <div class="countNumPrice">
+                            <div class="productNum">1</div>
+                            <div>x</div>   
+                            <div class="productPrice">$790</div>
+                        </div>
+                    </div>
+                    <div class="productDel">刪除</div>
+                </div>
+            </div>
+            <div>
+                <button>訂單結帳</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="cartDiv">
+        <label for="cartSwitch">
+            <img id="myCartPull" src="../picture/cart2.jpg" alt="">
+        </label>
+    </div>
+
+
+    <header class="menu">
+        <nav>
+            <ul class="saleList">
+                <a href="./myprojectMain.html"><img id="logo" src="../picture/logo.png" alt="這是logo"></a>
+                <li> <a href="#">新品上市</a></li>
+                <li> <a href="#">特價中</a></li>
+                <li> <a href="#">上身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">短袖上衣</a></li>
+                        <li><a href="">上袖上衣</a></li>
+                        <li><a href="">襯衫</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">下身</a>
+                    <ul class="saleListInner">
+                        <li><a href="">長褲</a></li>
+                        <li><a href="">短褲</a></li>
+                        <li><a href="">工作褲</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">配件</a>
+                    <ul class="saleListInner">
+                        <li><a href="">帽子</a></li>
+                        <li><a href="">眼鏡</a></li>
+                        <li><a href="">飾品</a></li>
+                    </ul>
+                </li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">鞋</a></li>
+                <li> <a href="https://www.w3schools.com/tags/tag_html.asp">關於我們</a></li>
+            </ul>
+        </nav>
+        <div class="featuresPic">
+            <input type="search" placeholder="請輸入關鍵字">
+            <button><img class="headSearch" src="../picture/search.png" alt=""></button>
+            <a href="./login.html"><img class="headPic" src="../picture/member.png" alt=""></a>
+            <a href="./login.html"><img class="headPic" src="../picture/noun_cart_1246425.png" alt=""></a>
+        </div>
+    </header>
+
+
+    <div class="addressBar">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">首頁</a>
+        <img class="right" src="../picture/right.png" alt="">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">衣服</a>
+        <img class="right" src="../picture/right.png" alt="">
+        <a href="https://www.w3schools.com/tags/tag_html.asp">襯衫</a>
+    </div>
+
+    <div>
+        <img id="goToTop" src="../picture/toTheTop.png" alt="">
+    </div>
+
+    <div class="rollingContainer">
+        <img class="leftOfImg" onclick="pre()" src="../picture/left.png" alt="">
+        <div class="productsRollImg">
+            <div class="imgsOfRolling" style="width: max-content;  ">
+                <img class="productsImg" src="../picture/TshirtGif.gif" />
+                <img class="productsImg" src="../picture/tshirtA1.jpeg" />
+                <img class="productsImg" src="../picture/tshirtA2.jpeg" />
+                <img class="productsImg" src="../picture/tshirtA3.jpeg" />
+                <img class="productsImg" src="../picture/tshirtA4.jpeg" />
+                <img class="productsImg" src="../picture/tshirtA5.jpeg" />
+                <img class="productsImg" src="../picture/tshirtA6.jpeg" />
+                <img class="productsImg" src="../picture/shirt1-1.jpg" />
+                <img class="productsImg" src="../picture/shirt2-1.jpg" />
+            </div>
+        </div>
+        <img class="rightOfImg" onclick="nex(-505)" src="../picture/right.png" alt="">
+        <div class="productDescription">
+            <h2>任選2件$600/預購/熱賣款韓國春夏素面短T 25色</h2>
+            <span>買一送一 兩件$600 ! 素色基本款 優質棉T 新色注入 共25色</span>
+            <span>衣櫃內超級需要的百搭單品 戶外麻豆 183/73 著L 室內麻豆 175/63 著M</span>
+            <span>此為預購商品，需約7-14個工作天(不含假日)出貨</span>
+            <span>下單後請勿任意取消訂單，謝謝您</span>
+            <span><b>
+                    <p>售價：NT$600</p>
+                </b></span>
+            <div class="buyStyleContainer">
+                <select class="productList">
+                    <option value="">米色 / S</option>
+                    <option value="">米色 / M</option>
+                    <option value="">米色 / L</option>
+                    <option value="">黑色 / S</option>
+                    <option value="">黑色 / M</option>
+                    <option value="">黑色 / L</option>
+                </select>
+                <div class="buyNumContainer">
+                    <button id="numLess">-</button>
+                    <input id="buyNum" type="text" value="1">
+                    <button id="numPlus">+</button>
+                </div>
+            </div>
+            <div>
+                <button id="joinCartNow">加入購物車</button>
+                <button id="buyNow">立即購買</button>
+            </div>
+        </div>
+        <div class="previewContainer">
+            <div class="imgsOfScroll" style="width: max-content;">
+                <img class="previewPic" src="../picture/TshirtGif.gif" />
+                <img class="previewPic" src="../picture/tshirtA1.jpeg" />
+                <img class="previewPic" src="../picture/tshirtA2.jpeg" />
+                <img class="previewPic" src="../picture/tshirtA3.jpeg" />
+                <img class="previewPic" src="../picture/tshirtA4.jpeg" />
+                <img class="previewPic" src="../picture/tshirtA5.jpeg" />
+                <img class="previewPic" src="../picture/tshirtA6.jpeg" />
+                <img class="previewPic" src="../picture/shirt1-1.jpg" />
+                <img class="previewPic" src="../picture/shirt2-1.jpg" />
+            </div>
+        </div>
+        <div class="navOfProduct">
+            <div> 商品介紹</div>
+            <div> 規格說明</div>
+            <div>退換貨說明</div>
+        </div>
+        <hr>
+        <div class="productDes">
+            <img src="../picture/tshirtAbigpic1.jpg" alt="">
+            <img src="../picture/tshirtAbigpic2.jpg" alt="">
+            <img src="../picture/tshirtAbigpic3.jpg" alt="">
+            <img src="../picture/rule.jpg" alt="">
+            <div>
+                <h2>退換說明</h2>
+                <p>請確認完全詳讀此退貨規範，以保障您退貨權益。</p>
+                <p>若有需要辦理退貨流程，務必為全新商品並保留完整包裝！</p>
+                <p>並請於收到包裹後當日算起5天內(不包含例假日)，</p>
+                <p>請加我們LINE ID ► @MyClothes，先留言訂單編號，且告知商品因尺寸不合或其他因素需退換貨。</p>
+                <p>客服小編於上班時間將會依序回復，請不要重複傳訊息，避免因資料重複而延遲您的退貨時間。</p>
+                <p>請自行準備紙盒或紙箱等其他外包裝，請勿直接拿衣服的防塵袋寄回，以免商品在運送途中受損造成無法退換貨。</p><br>
+                <p>若因個人因素需退換貨，皆須自行負擔來回運費，</p>
+                <p>我們將於收到退貨且檢查商品狀況無污無毀損後，3日內於您官網的帳戶中儲值購物金(紅利點數)。</p>
+                <p>收到購物金後若有退款需求，請您於5日內聯繫客服為您辦理退款唷。(須扣除轉帳手續費)</p><br>
+                <h2>注意事項</h2>
+                <p>* 經常性退換貨商品(賣家自行判別) *</p>
+                <p>* 下單後自行取消/惡意棄單者 *</p>
+                <p>將會直接取消其他未出貨訂單，並設定為黑名單。還請留意退貨次數，確認商品後再進行購買</p><br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mainFooter">
+        <div class="footerPicContainer">
+            <img class="contractPic" src="../picture/igMark.png" alt="">
+            <img class="contractPic" src="../picture/fbMark.png" alt="">
+            <img class="contractPic" src="../picture/LineMark.jpg" alt="">
+        </div>
+        <div class="footerNavContainer">
+            <div class="footerItem">
+                <h3>新品上市</h3>
+            </div>
+            <div class="footerItem">
+                <h3>特價中</h3>
+            </div>
+            <div class="footerItem">
+                <h3>所有商品</h3>
+            </div>
+            <div class="footerItem">
+                <h3>關於我們</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

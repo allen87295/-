@@ -1,0 +1,489 @@
+body{
+     margin: 0; padding: 0; 
+     height: 100%;
+    }    
+.menu{
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(255,255,255,0.5);
+    box-shadow : 3px 0px 10px hsla(240,40%,15%,.6);
+    position: relative;
+}
+
+
+
+.saleList>li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 800;   
+    text-shadow: black 0.01em 0.05em 0.1em;
+    padding: 30px 20px;
+    
+     
+}
+.saleListInner>li{
+    list-style-type: none;
+    padding: 10px 20px;
+    background-color: white;
+    border: seashell 0.5px solid; 
+    
+}
+
+.saleList>li:hover > a {
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    right: 1px;
+    
+}
+li>ul{ 
+     margin:0; padding:0; 
+} 
+
+
+.featuresPic input, 
+.featuresPic button{
+    border:1px solid black ;
+}
+.featuresPic input:focus, 
+.featuresPic button:focus{
+    outline: none;
+}
+
+
+.featuresPic button{
+    border-radius: 0 200px 200px 0;
+}
+.featuresPic input{
+    border-radius: 200px 0 0 200px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "微軟正黑體";
+    color:black;
+    letter-spacing: 2px;
+    display: block;
+}
+
+nav{
+    display: flex;
+    flex-grow: 6;
+}
+.saleList{
+    display: flex;
+    width: 100%;
+    height: 50px;   
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.saleList ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    background-color:rgb(255,255,255,0.2);
+    border: gray solid 1px;
+    box-shadow: 5px 0px 10px hsla(100,0%,3%,.3);
+    z-index: 1;
+}
+
+.saleList :hover ul{
+    display: block;
+    
+}
+
+.featuresPic{
+    display: flex;
+    flex-grow: 4;
+    margin: auto;
+    
+}
+.headPic{
+    width: 25px;
+    height: 25px;   
+}
+.headSearch{
+    width: 20px;
+    height: 20px;
+}
+
+.addressBar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: lightgray;
+    padding: 5px 150px;
+}
+
+.addressBar a{
+    font-size: 14px;
+    font-family: "微軟正黑體";
+    font-weight: 700;
+    margin: 0 10px;
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+.sideCart{
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+    height: 100%;
+    border: grey solid 0.5px;
+    background-color: rgba(34,40,49,1);
+    color: white;
+    border: black solid 2px;
+    box-shadow : 3px 0px 10px hsla(240,40%,15%,.6);
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+#cartSwitch:checked ~ .sideCart{
+    transform: translateX(0);
+}
+
+
+#cartSwitch{
+ position: absolute;
+ visibility: hidden;
+}
+
+.sideCart span{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 0 ;
+    letter-spacing: 1px;
+    background-color: black;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.sideCart img{
+    width: 40px;
+    height: 40px;
+}
+
+.productInCart{
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    border-bottom: black solid 2px;
+    height: 100px;
+}
+
+.sideCart button{
+    display: flex;
+    margin: 10px auto;
+    padding: 10px 70px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: white solid 1px;
+    cursor: pointer;
+}
+
+.productDel{
+    pad: 5px;
+    cursor: pointer;
+}
+
+.productDel:hover{
+    color: gray;
+ }
+ 
+#myCartPull{
+    width: 55px;
+    height: 55px; 
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 1px 0px 5px hsla(240,40%,15%,.6);
+}
+
+#myCartPull:hover{
+    box-shadow: 1px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.countNumPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.Cartproduct{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    border-bottom: black 0.5px solid;
+}
+
+
+.cartDiv{
+    position: fixed;
+    top: 160px;
+    left: 70px;  
+    transition: 0.5s;
+    z-index: 100;
+}
+
+#cartSwitch:checked ~ .cartDiv{
+    position: fixed;
+    transform: translateX(180px); 
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.rollingContainer{
+    position: relative;
+    
+}
+
+.right,.left{
+    width: 30px;
+    height: 30px;
+}
+.leftOfImg{
+    width: 50px;
+    height: 50px;
+    position: absolute; 
+    top: 250px;
+    left: 155px;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.rightOfImg{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 690px;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.productsImg{
+    width:500px;
+    height:550px;
+}
+.productsRollImg{
+    width:500px;
+    margin: 30px 200px;
+    overflow:hidden;
+   
+}
+
+.productDescription{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 200px;
+    top: 0;
+}
+.productDescription span{
+    padding: 5px;
+}
+
+.productDescription b{
+    font-size: 20px;
+    color: lightcoral;    
+}
+
+.buyStyleContainer{
+    display: flex;
+    align-items: center;
+    margin: 150px 0 5px 0 ;
+}
+
+.buyNumContainer{
+    display: flex;
+    
+}
+
+#numLess{
+    border-radius: 10px 0 0 10px;
+}
+
+#numPlus{
+    border-radius: 0 10px 10px 0;
+}
+
+.productList{
+    height: 40px;
+    width: 250px;
+    margin: 0 8px;
+}
+.productList:focus{
+    box-shadow : 3px 0px 10px rgba(167, 184, 233, 0.8);
+}
+
+.buyNumContainer input{
+    height: 40px;
+    width: 160px;
+    text-align: center;
+}
+
+.buyNumContainer input:focus, 
+.buyNumContainer button:focus,
+#joinCartNow,#buyNow
+{
+    outline: none;
+}
+
+.buyNumContainer button{
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    
+}
+
+#joinCartNow,#buyNow{
+    height: 45px;
+    width: 252px;
+    border-radius: 10px 10px 10px 10px;
+}
+#joinCartNow{
+    margin: 15px 4px;
+    background-color: white;
+    border:rgba(109, 9, 9, 0.8) solid 0.5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#joinCartNow:hover{
+    background-color: rgba(109, 9, 9, 0.7);
+    color: white;
+}
+
+#buyNow{
+    margin: 15px 3px;
+    background-color:rgba(109, 9, 9, 0.7);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+#buyNow:hover{
+    background-color:rgba(109, 9, 9, 0.9);;
+}
+
+
+.previewContainer{
+    width:500px;
+   margin: 30px 200px;
+    overflow:scroll;
+    overflow-y:hidden;
+}
+
+.previewPic {
+    width: 70px;
+    height: 70px;
+   
+}
+
+.navOfProduct{
+    display: flex;
+    justify-content: center;
+}
+
+.navOfProduct :not(:nth-child(2)){
+    display: flex;
+    background-color: rgba(200,200,200,0.8);
+    padding: 15px 180px ;
+    font-size: 20px;    
+    font-weight: 600;
+    border: gainsboro 0.5px solid;
+}
+
+.navOfProduct :nth-child(2){
+    display: flex;
+    background-color:  rgba(250,250,250,0.8);
+    padding: 15px 180px ;       
+    font-size: 20px;
+    font-weight: 600;
+    border: gainsboro 0.5px solid;
+    
+}
+
+.navOfProduct :not(:nth-child(2)):hover{
+    background-color: white;
+    cursor:pointer;
+   
+
+}
+
+.navOfProduct :nth-child(2):hover{
+    background-color: gainsboro;
+    cursor:pointer;
+   
+}
+
+.productDes img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.productDes{
+    margin: 0 30px;
+}
+
+.productDes h2{
+ color: red;
+}
+
+.navOfProductfixed{
+position: fixed;
+top: 0;
+left:90px;
+}
+
+#goToTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40px;
+    right: 70px;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 25px 25px 25px 25px;
+    opacity: 0 ;
+    visibility: hidden;
+}
+
+.mainFooter{
+    display: flex; 
+    flex-flow: column;
+    justify-content: center;
+    background-image: url(../picture/bottomBackground.jpg);
+    background-size: cover;
+}
+
+.footerPicContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNavContainer{
+    display: flex; 
+    justify-content: space-around;
+    align-content: center;
+}
+.footerItem{
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+}
+.contractPic{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px ;  
+}
